@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Thao tác trên hợp đồng - Hướng dẫn sử dụng hệ thống vContract</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Thao t\u00e1c tr\u00ean h\u1ee3p \u0111\u1ed3ng";
+        var mkdocs_page_input_path = "vContract\\thao-tac-tren-hop-dong.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Hướng dẫn sử dụng hệ thống vContract
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Trang chủ</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">vContract - Hợp đồng điện tử</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../cau-hinh-truoc-khi-su-dung/">Cấu hình trước khi sử dụng</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Thao tác trên hợp đồng</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#lap-hop-ong-chon-tep-tu-may">Lập hợp đồng chọn tệp từ máy</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lap-hop-ong-theo-lo">Lập hợp đồng theo lô</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lap-hop-ong-chon-tu-mau">Lập hợp đồng chọn từ mẫu</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#chinh-sua-hop-ong">Chỉnh sửa hợp đồng</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sao-chep-hop-ong">Sao chép hợp đồng</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#huong-dan-cau-hinh-chan-ky-khi-lap-hop-ong">Hướng dẫn Cấu hình chân ký khi Lập hợp đồng</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#thuc-hien-luong-ky-hop-ong">Thực hiện luồng ký hợp đồng</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ky-hop-ong">Ký hợp đồng</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ky-bang-usb-token">Ký bằng USB Token</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ky-bang-sim-ca">Ký bằng SIM CA</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ky-bang-cloud-ca">Ký bằng Cloud CA</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ky-bang-phuong-thuc-otp">Ký bằng phương thức OTP</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hop-ong-so-hoa">Hợp đồng số hóa</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hop-ong-can-xac-nhan">Hợp đồng cần xác nhận</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../release-notes/">Release Notes</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Hướng dẫn sử dụng hệ thống vContract</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">vContract - Hợp đồng điện tử</li>
+      <li class="breadcrumb-item active">Thao tác trên hợp đồng</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="thao-tac-tren-hop-ong"><strong>Thao tác trên hợp đồng</strong></h2>
+<h3 id="lap-hop-ong-chon-tep-tu-may"><strong>Lập hợp đồng chọn tệp từ máy</strong></h3>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/XGmfVICJRB8?si=3r42BPwvd-mLb7DH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<ul>
+<li><strong>Bước 1</strong>: Chọn menu chính "Hợp đồng của tôi" (menu trái).</li>
+<li>
+<p><strong>Bước 2</strong>: Chọn menu chức năng "Lập hợp đồng".
+  <img alt="" src="../picture/lap-hop-dong-chon-tep-tu-may-b2.png" /></p>
+</li>
+<li>
+<p><strong>Bước 3</strong>: Chọn cách lập hợp đồng: từ file pdf upload lên hoặc lập từ mẫu đã đăng ký.</p>
+</li>
+<li><strong>Bước 4</strong>: Chọn file pdf cần upload hoặc chọn Mẫu để tạo hợp đồng.</li>
+<li><strong>Bước 5</strong>: Nhập các thông tin chung của hợp đồng: Tên, mã, loại hợp đồng,...
+  <img alt="" src="../picture/lap-hop-dong-chon-tep-tu-may-b5.1.png" />
+  <img alt="" src="../picture/lap-hop-dong-chon-tep-tu-may-b5.2.png" /></li>
+<li><strong>Bước 6</strong>: Thiết lập các bên ký kết.</li>
+<li>Chọn các bên tham gia ký kết: Để thêm 1 bên ký kết phải nhập đúng số giấy tờ/mã số thuế của bên tham gia ký kết &gt;&gt; Hệ thống hiển thị tên chủ thể cho người dùng chọn.</li>
+<li>Thiết lập thứ tự ký: Nhập thứ tự ký cho từng chủ thể ở cột đầu tiên "TT ký", có thể thiết lập ký song song bằng cách đặt thứ tự ký của các chủ thể bằng nhau.</li>
+<li><strong>Bước 7</strong>: Thiết lập luồng phê duyệt-ký duyệt của nội bộ bên lập (nếu bên lập tham gia ký kết)</li>
+<li>Thêm người dùng vào luồng phê duyệt/ký duyệt bằng gõ tên/email của người dùng cần thêm &gt;&gt; Hệ thống hiển thị các người dùng phù hợp với nội dung nhập vào để người lập chọn.</li>
+<li>Thứ tự duyệt-ký là cố định và lần lượt: Người dùng thêm vào trước luôn phê duyệt trước, người cuối cùng của luồng thực hiện chức năng ký duyệt.
+    <img alt="" src="../picture/lap-hop-dong-chon-tep-tu-may-b7.png" /></li>
+<li><strong>Bước 8</strong>: Click nút "Lập hợp đồng" &gt;&gt; Hệ thống kiểm tra và lập hợp đồng ở trạng thái <strong>"Nháp"</strong>.</li>
+</ul>
+<h3 id="lap-hop-ong-theo-lo"><strong>Lập hợp đồng theo lô</strong></h3>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/1UtQeEGZsOw?si=omBtmd2JwEyqdEhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<ul>
+<li><strong>Bước 1</strong>: Truy cập Hợp đồng của tôi &gt;&gt; HĐ tôi lập &gt;&gt; Thêm mới lô.
+  <img alt="" src="../picture/lap-hop-dong-theo-lo-b1.png" /></li>
+<li><strong>Bước 2</strong>: Thực hiện chọn mẫu hợp đồng áp dụng theo lô.
+  <img alt="" src="../picture/lap-hop-dong-theo-lo-b2.png" /></li>
+<li><strong>Bước 3</strong>: Thiết lập thông tin và cấu hình cho lô.</li>
+<li>Tại Thông tin mẫu tạo lô (1): Người dùng thực hiện tải file excel mẫu mà hệ thống đã thiết lập sẵn, điền các thông tin yêu cầu. Và tải file excel đó lên hệ thống.</li>
+<li>Tại Cấu hình luồng ký theo lô (2): Thực hiện chọn người phê duyệt, ký áp dụng xuyên suốt cho lô hợp đồng này.</li>
+<li>Tại Thiết lập cấu hình chân ký (3): Đã thiết lập theo mẫu hợp đồng chọn ban đầu.
+    <img alt="" src="../picture/lap-hop-dong-theo-lo-b3.png" /></li>
+</ul>
+<h3 id="lap-hop-ong-chon-tu-mau"><strong>Lập hợp đồng chọn từ mẫu</strong></h3>
+<p><strong>Mục đích:</strong> Tạo hợp đồng bằng cách chọn từ mẫu có sẵn của hệ thống, người dùng chọn mãu <strong>-&gt;</strong> Hệ thống bind các thông tin cần điền. Sau khi điền thông tin sẽ xuất file hợp đồng để thực hiện ký.</p>
+<p><strong>Điều kiện:</strong> Người dùng có quyền thao tác ở đơn vị.</p>
+<p><strong>Các bước thực hiện:</strong></p>
+<ul>
+<li><strong>Bước 1</strong>: Tại màn hình Trang chủ, bấm chọn Hợp đồng của tôi <strong>-&gt;</strong> Lập hợp đồng <strong>-&gt;</strong> Chọn nút <strong>Chọn từ mẫu</strong>.
+  <img alt="" src="../picture/lap-hop-dong-chon-tu-mau-b1.png" /></li>
+<li><strong>Bước 2</strong>: Hệ thống hiển thị popup chọn mẫu hợp đồng. Người dùng thao tác chọn mẫu đã có bấm "Lưu".
+  <img alt="" src="../picture/lap-hop-dong-chon-tu-mau-b2.png" /></li>
+<li><strong>Bước 3</strong>: Sau khi chọn mẫu thành công, hệ thống hiển thị màn hình Nhập thông tin chung.
+  <img alt="" src="../picture/lap-hop-dong-chon-tu-mau-b3.png" /></li>
+</ul>
+<p><strong>Trong đó:</strong></p>
+<p><strong>(1) Nhập thông tin chung:</strong></p>
+<p>Bao gồm:</p>
+<ul>
+<li>Mẫu hợp đồng: Hiển thị tên mẫu hợp đồng đã chọn ở bước 1.</li>
+<li>Loại hợp đồng: Hiển thị loại hợp đồng của mẫu đã chọn.</li>
+<li>Tên hợp đồng/phụ lục: đây là tên của hợp đồng đang lập - bắt buộc nhập.</li>
+<li>Mã hợp đồng/phụ lục: đây là mã của hợp đồng đang lập - bắt buộc nhập, không được nhập trùng, không có khoảng trắng.</li>
+</ul>
+<p><strong>(2) Danh sách tệp đính kèm:</strong> Tải các tệp đính kèm - Chỉ chấp nhận tập tin PDF (<em>.pdf) và tập tin hình ảnh (</em>.jpg, <em>.png, </em>.bmp).</p>
+<p><strong>(3) Các bên ký hợp đồng:</strong> Thiết lập các bên thực hiện ký kết hợp đồng, có 1 bên lập và nhiều bên khách hàng. Phải có ít nhất 1 đối tượng ký hợp đồng.</p>
+<ul>
+<li>Nhập đúng số giấy tờ/Mã số thuế của bên ký kết để hệ thống suggest thông tin.</li>
+</ul>
+<p><strong>(4) Thiết lập luồng duyệt - ký hợp đồng nội bộ:</strong> Yêu cầu thiết lập thành viên trong nội bộ thực hiện ký, sẽ có nhiều người duyệt nhưng chỉ có 1 người ký.</p>
+<ul>
+<li>
+<p>Nhập đúng email để suggest thông tin thành viên.</p>
+</li>
+<li>
+<p><strong>Bước 4</strong>: sau khi điền thông tin và thiết lập luồng ký ở bước 2, Bấm "Tiếp theo" <strong>-&gt;</strong> Chuyển đến màn hình Điền nội dung hợp đồng.
+  <img alt="" src="../picture/lap-hop-dong-chon-tu-mau-b4.png" /></p>
+</li>
+<li>
+<p>Hệ thống tự động bind thông tin theo mẫu cấu hình, người dùng thực hiện điền thông tin hợp đồng tại cột <strong>Giá trị</strong> của bảng tại tab <strong>Điền thông tin và tính toán</strong>.</p>
+</li>
+<li>
+<p>Bấm "Quay lại" để chuyển về bước 2.</p>
+</li>
+<li>
+<p>Sau khi điền thông tin bấm Tiếp theo để đến bước 4.</p>
+</li>
+<li>
+<p><strong>Bước 5</strong>: Hiển thị màn hình Xem trước hợp đồng.
+  <img alt="" src="../picture/lap-hop-dong-chon-tu-mau-b5.png" /></p>
+</li>
+</ul>
+<p>Trong đó:</p>
+<p>(1) Thông tin chung của hợp đồng - đã nhập ở bước 2. có thể chỉnh sửa.</p>
+<p>(2) Xem trước hợp đồng - đây là bản xem trước hợp đồng đã được map từ file mẫu của mẫu và các giá trị thông tin điền ở bước 2.</p>
+<p>(3) Nút <strong>Chọn hợp đồng khác -&gt;</strong> Bấm vào để thực hiện chọn hợp đồng khác thay đổi hình thức lập hợp đồng sang <strong>Chọn tệp từ máy</strong>.</p>
+<p>(4) Nút <strong>Chọn từ mẫu khác -&gt;</strong> bấm vào để thực hiện chọn mẫu khác.</p>
+<p>(5) Nút <strong>quay lại -&gt;</strong> Bấm để quay lại màn hình bước 2.</p>
+<p>(6) Nút <strong>Lập hợp đồng -&gt;</strong> Bấm để thực hiện lập hợp đồng.</p>
+<ul>
+<li><em>Bước 6<strong>: Bấm lập hợp đồng </strong>-&gt;</em> Thực hiện lưu hợp đồng ở trạng thái Nháp.</li>
+</ul>
+<h3 id="chinh-sua-hop-ong"><strong>Chỉnh sửa hợp đồng</strong></h3>
+<p><strong>Mục đích:</strong> Chỉnh sửa hợp đồng đã lập ở trạng thái Nháp.</p>
+<p><strong>Điều kiện:</strong> Người dùng có quyền thao tác ở đơn vị.</p>
+<p><strong>Các bước thực hiện:</strong></p>
+<ul>
+<li><strong>Bước 1</strong>: Tại menu danh mục Hợp đồng của tôi <strong>-&gt;</strong> Chọn Hợp đồng tôi lập. Hệ thống hiển thị màn hình Hợp đồng tôi lập.
+  <img alt="" src="../picture/chinh-sua-hop-dong-b1.png" /></li>
+<li><strong>Bước 2</strong>: Chọn hợp đồng và bấm nút "Chỉnh sửa". Tùy hợp đồng được chọn lập theo hình thức Chọn tệp từ máy hay Chọn từ mẫu hệ thống sẽ hiển thị ra màn hình tương ứng.</li>
+<li>Nếu <strong>Chọn tệp từ máy -&gt;</strong> Chuyển màn hình bước 3.</li>
+<li>Nếu <strong>Chọn từ mẫu -&gt;</strong> Chuyển màn hình bước 1.</li>
+<li><strong>Bước 3</strong>: Các bước tiếp theo tương tự khi Lập hợp đồng.</li>
+</ul>
+<h3 id="sao-chep-hop-ong"><strong>Sao chép hợp đồng</strong></h3>
+<p><strong>Mục đích:</strong> Sao chép 1 hợp đồng đã có thành hợp đồng mới, cho phép clone thông tin của hợp đồng được sao chép để chỉnh sửa.</p>
+<p><strong>Điều kiện:</strong> Người dùng có quyền thao tác ở đơn vị.</p>
+<p><strong>Các bước thực hiện:</strong></p>
+<ul>
+<li><strong>Bước 1</strong>: Tại menu danh mục Hợp đồng của tôi <strong>-&gt;</strong> Chọn hợp đồng tôi lập. Hệ thống hiển thị màn hình Hợp đồng tôi lập.
+  <img alt="" src="../picture/sao-chep-hop-dong-b1.png" /></li>
+<li>
+<p><strong>Bước 2</strong>: Chọn hợp đồng và bấm nút "Sao chép". Tùy hợp đồng được chọn lập theo hình thức Chọn tệp từ máy hay chọn từ mẫu hệ thống sẽ hiển thị ra màn hình tương ứng.</p>
+</li>
+<li>
+<p>Nếu <strong>Chọn tệp từ máy -&gt;</strong> Chuyển màn hình bước 3 và có nút "Chọn tệp từ máy" để chọn file hợp đồng.
+    <img alt="" src="../picture/sao-chep-hop-dong-b2.png" /></p>
+</li>
+<li>
+<p>Nếu <strong>Chọn từ mẫu -&gt;</strong> Chuyển màn hình bước 1, các thông tin ở màn hình bước 1 và màn hình bước 2 được giữu nguyên như sao chép.</p>
+</li>
+<li>
+<p><strong>Bước 3</strong>: Các bước tiếp theo tương tự khi Lập hợp đồng.</p>
+</li>
+</ul>
+<h3 id="huong-dan-cau-hinh-chan-ky-khi-lap-hop-ong"><strong>Hướng dẫn Cấu hình chân ký khi Lập hợp đồng</strong></h3>
+<ul>
+<li><strong>Bước 1</strong>: Truy cập hệ thống, vào menu Hợp đồng tôi lập <strong>-&gt;</strong> Lập hợp đồng: Hệ thống hiển thị màn hình Lập hợp đồng <strong>-&gt;</strong> chọn nút "Chọn tệp từ máy".
+  <img alt="" src="../picture/huong-dan-cau-hinh-chan-ky-khi-lap-hop-dong-b1.png" /></li>
+<li><strong>Bước 2</strong>: Hệ thống hiển thị popup chọn tệp từ máy, người dùng chọn Tệp để update, Tệp ở định dang PDF và không quá 10M.</li>
+<li>
+<p><strong>Bước 3</strong>: Sau khi tải file thành công, hệ thống hiển thị màn hình Nhập thông tin chung.
+  <img alt="" src="../picture/huong-dan-cau-hinh-chan-ky-khi-lap-hop-dong-b3.png" /></p>
+</li>
+<li>
+<p><strong>Trong đó:</strong></p>
+<ul>
+<li><strong>(1) Nhập thông tin chung:</strong></li>
+<li>Mẫu hợp đồng: Hiển thị tên mẫu hợp đồng đã chọn ở bước 1.</li>
+<li>Loại hợp đồng: Hiển thị laoị hợp đồng của mẫu đã chọn.</li>
+<li>Tên hợp đồng/phụ lục: đây là tên của hợp đồng đang lập - bắt buộc nhập.</li>
+<li>Mã hợp đồng/phụ lục: đây là mã của hợp đồng đang lập - bắt buộc nhập, không được nhập trùng, không có khoảng trắng.</li>
+<li><strong>(2) Danh sách tệp đính kèm:</strong> Tải các tệp đính kèm - Chỉ chấp nhận tập tin PDF (<em>.pdf) và tập tin hình ảnh (</em>.jbg, <em>.png, </em>.bmp).</li>
+<li><strong>(3) Các bên ký hợp đồng:</strong> THiết lập các bên thực hiện ký hợp đồng, có 1 bên lập và nhiều bên khách hàng. Phải có ít nhất 1 đối tượng ký hợp đồng.</li>
+<li>Nhập đúng thông tin email/số điện thoại/Tên khách hàng/số giấy tờ của bên ký kết để hệ thống suggest thông tin.</li>
+<li><strong>(4) Thiết lập luồng duyệt - ký hợp đồng nội bộ:</strong> Yêu cầu thiết lập thành viên trong nội bộ thực hiện ký, sẽ có nhiều người duyệt nhưng chỉ có 1 người ký.</li>
+<li>Nhập đúng email để suggest thông tin thành viên.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bước 4</strong>: Sau khi điền thông tin và thiết lập luồng ký ở bước 1, bấm "Tiếp theo" <strong>-&gt;</strong> Chuyển đến màn hình.
+  <img alt="" src="../picture/huong-dan-cau-hinh-chan-ky-khi-lap-hop-dong-b4.png" /></p>
+</li>
+<li><strong>Trong đó:</strong><ul>
+<li>(1) Thông tin chung của hợp đồng - đã nhập ở bước 2. Có thể chỉnh sửa.</li>
+<li>(2) Xem trước hợp đồng - đây là bản xem trước hợp đồng đã upload.</li>
+<li>(3) Nút <strong>Chọn hợp đồng khác -&gt;</strong> Bấm vào để thực hiện chọn hợp đồng khác để thay thế hợp đồng đã upload ở bước 1.</li>
+<li>(4) Nút <strong>Chọn từ mẫu khác -&gt;</strong> Bấm vào để thực hiện chọn mẫu khác để thay đổi hình thức lập hợp đồng sang <strong>Chọn từ mẫu</strong>.</li>
+<li>(5) Nút <strong>quay lại -&gt;</strong> Bấm để quay lại màn hình bước 2.</li>
+<li>(6) Nút <strong>Lập hợp đồng -&gt;</strong> Bấm để thực hiện Lập hợp đồng.</li>
+<li>(7) Nút <strong>Cấu hình chân ký -&gt;</strong> Chuyển sang màn hình cấu hình chân ký.</li>
+<li>(8) Nút Mở rộng vùng văn bản.</li>
+</ul>
+</li>
+<li><strong>Bước 5</strong>: Bấm Nút "Cấu hình chân ký" để mở màn hình cấu hình chân ký.
+  <img alt="" src="../picture/huong-dan-cau-hinh-chan-ky-khi-lap-hop-dong-b5.1.png" /></li>
+<li>Người dùng bấm <img alt="Alt text" src="../image.png" /> để Thêm chân ký, bấm vào sẽ hiển thị khung chữ ký, thực hiện di chuyển và thả để chọn vị trí chân ký.</li>
+<li>Chân ký sau khi thiết lập.
+    <img alt="" src="../picture/huong-dan-cau-hinh-chan-ky-khi-lap-hop-dong-b5.1.png" /></li>
+<li>Để thay đổi vị trí chân ký: Có thể di chuột vào khung chân ký và thực hiện kéo thả.</li>
+<li>Để <strong>Xóa cấu hình chân cký:</strong> Bấm icon <img alt="Alt text" src="../image-1.png" /> để xóa cấu hình chân ký.</li>
+<li><strong>Bước 6</strong>: Sau khi cấu hình chân ký bấm <strong>Lập hợp đồng -&gt;</strong> Thực hiện lưu hợp đồng ở trạng thái Nháp.</li>
+</ul>
+<h3 id="thuc-hien-luong-ky-hop-ong"><strong>Thực hiện luồng ký hợp đồng</strong></h3>
+<p>Sau khi đã soạn thảo hoàn tất 1 hợp đồng, người lập chuyển hợp đồng đến các bên ký kết bằng chức năng Thực hiện luồng ký, các bước thực hiện như sau</p>
+<ul>
+<li><strong>Bước 1</strong>: Chọn menu chính "Hợp đồng của tôi" (nemu trái).</li>
+<li><strong>Bước 2</strong>: Chọn menu chức năng "Hợp đông tôi lập".</li>
+<li><strong>Bước 3</strong>: Click icon "Thực hiện luồng ký" của hợp đồng cần chuyển.</li>
+<li><strong>Bước 4</strong>: Click "Đồng ý" để xác nhận chuyển xử lý hợp đồng.
+  <img alt="" src="../picture/thuc-hien-luong-ky-hop-dong-b4.png" /></li>
+</ul>
+<h3 id="ky-hop-ong"><strong>Ký hợp đồng</strong></h3>
+<ul>
+<li>
+<p><strong>Mục đích:</strong> Sử dụng cho người dùng có yêu cầu ký hợp đồng.</p>
+</li>
+<li>
+<p><strong>Các bước thực hiện:</strong></p>
+</li>
+<li>
+<p><strong>Bước 1:</strong> Hợp đồng của tôi &gt;&gt; HĐ chờ ký duyệt &gt;&gt; Xem chi tiết.
+    <img alt="" src="../picture/ky-hop-dong-b1.png" /></p>
+</li>
+<li><strong>Bước 2:</strong> Từ màn hình xem chi tiết tài liệu chọn <img alt="Alt text" src="../image-2.png" /> &gt;&gt; chọn vị trí ký:
+    <img alt="" src="../picture/ky-hop-dong-b2.1.png" />
+    <strong>Lưu ý:</strong> Người dùng có thể thực hiện ký theo lô cho các hợp đồng chưa được ký.
+    <img alt="" src="../picture/ky-hop-dong-b2.2.png" /></li>
+</ul>
+<h4 id="ky-bang-usb-token"><strong>Ký bằng USB Token</strong></h4>
+<ul>
+<li><strong>Cách 1: Sử dụng ảnh chứng thư số đã đăng ký:</strong></li>
+</ul>
+<p>Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "USB TOKEN" &gt;&gt; chọn chứng thư số &gt;&gt; nhấn "Tiếp theo" &gt;&gt; Tab "Ảnh đã đăng ký" &gt;&gt; nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;. nhấn "Ký" để thực hiện ký thành công.</p>
+<ul>
+<li>
+<p><strong>Cách 2: Vẽ ảnh chữ ký:</strong></p>
+</li>
+<li>
+<p>Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "USB TOKEN" &gt;&gt; Chọn chứng thư số &gt;&gt; nhấn "Tiếp theo" &gt;&gt; Tab "Vẽ chữ ký" thực hiện di chuột để vẽ chữ ký mong muốn &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký thành công.</p>
+</li>
+<li>
+<p>Hệ thống thông báo "Ký hợp đồng thành công" để hoàn thành thao tác ký.</p>
+</li>
+<li>
+<p><strong>Cách 3: Tải ảnh mới</strong></p>
+</li>
+<li>
+<p>Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "USB TOKEN" &gt;&gt; Chọn chứng thư số &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Tab "Tải ảnh mới lên" nhấn chuột vào ô chữ nhật để tải ảnh mới cho phương thức ký đã chọn &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký thành công.</p>
+</li>
+<li>Hệ thống thông báo "Ký hợp đồng thành công" để hoàn thành thao tác ký.</li>
+</ul>
+<h4 id="ky-bang-sim-ca"><strong>Ký bằng SIM CA</strong></h4>
+<ul>
+<li><strong>Cách 1: Sử dụng ảnh chứng thư số đã đăng ký:</strong>
+  Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "SIMCA" &gt;&gt; Chọn chứng thư số &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Tab "Ảnh đã đăng ký" &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký thành công.</li>
+<li><strong>Cách 2: Vẽ ảnh chữ ký:</strong></li>
+<li>Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "SIMCA" &gt;&gt; Chọn chứng thư số &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Tab "Vẽ chữ ký" thực hiện di chuột để vẽ chữ ký mong muốn &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký thành công.</li>
+<li>Hệ thống thông báo "Ký hợp đồng thành công" để hoàn thành thao tác ký.</li>
+<li><strong>Cách 3: Tải ảnh mới</strong></li>
+<li>Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "SIMCA" &gt;&gt; chọn chứng thư số &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Tab "Tải ảnh mới lên" nhấn chuột vào ô chữ nhật để tải ảnh mới cho phương thức ký đã chọn &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký thành công.</li>
+<li>Hệ thống thông báo "Ký hợp đồng thành công" để hoàn thành thao tác ký.</li>
+</ul>
+<h4 id="ky-bang-cloud-ca"><strong>Ký bằng Cloud CA</strong></h4>
+<ul>
+<li>
+<p><strong>Cách 1: Sử dụng ảnh chứng thư số đã đăng ký:</strong>
+  Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "Ký số từ xa" &gt;&gt; Chọn chứng thư số &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Tab "Ảnh đã đăng ký" &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký thành công.</p>
+</li>
+<li>
+<p><strong>Cách 2: Vẽ ảnh chữ ký:</strong></p>
+</li>
+<li>
+<p>Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "Ký số từ xa" &gt;&gt; Chọn chứng thư số &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Tab "Tải ảnh mới lên" nhấn chuột vào ô chữ nhật để tải ảnh mới cho phương thức ký đã chọn &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký thành công.</p>
+</li>
+<li>
+<p>Hệ thống thông báo "Ký hợp đồng thành công" để hoàn thành thao tác ký.</p>
+</li>
+<li>
+<p><strong>Cách 3: Tải ảnh mới</strong></p>
+</li>
+<li>Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "Ký số từ xa" &gt;&gt; Chọn chứng thư số &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Tab "Tải ảnh mới lên" nhấn chuột vào ô chữ nhật để tải ảnh mới cho phương thức ký đã chọn &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký thành công.</li>
+<li>Hệ thống thông báo "Ký hợp đồng thành công" để hoàn thành thao tác ký.</li>
+</ul>
+<h4 id="ky-bang-phuong-thuc-otp"><strong>Ký bằng phương thức OTP</strong></h4>
+<p><strong>Lưu ý:</strong> Chỉ áp dụng với người ký là <strong>Khách hàng cá nhân</strong>.</p>
+<ul>
+<li><strong>Bước 1:</strong> Đăng nhập vào tài khoản khách hàng cá nhân &gt;&gt; Hợp đồng của tôi &gt;&gt; HĐ chờ ký duyệt:</li>
+<li><strong>Bước 2:</strong> Từ màn hình xem chi tiết hợp đồng chọn <img alt="Alt text" src="../image-3.png" /></li>
+<li><strong>Bước 3:</strong> Thực hiện ký:</li>
+<li><strong>Cách 1: Sử dụng ảnh chứng thư số đã đăng ký:</strong><ul>
+<li>Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "Xác thực OTP" &gt;&gt; Chọn số điện thoại ký OTP &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Tab "Ảnh đã đăng ký" &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Cick để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký.
+  <img alt="" src="../picture/ky-bang-phuong-thuc-otp-b1.png" /></li>
+<li>Nhập Mã xác thực về số điện thoại đăng ký phương thức ký OTP &gt;&gt; Nhấn "Xác nhận" để hoàn thành việc ký hợp đồng:
+  <img alt="" src="../picture/ky-bang-phuong-thuc-otp-b3.1.png" /></li>
+<li>Nhập Mã xác thực gửi về số điện thoại đăng ký phương thức ký OTP &gt;&gt; Nhấn "Xác nhận" để hoàn thành việc ký hợp đồng:
+  <img alt="" src="../picture/ky-bang-phuong-thuc-otp-b3.2.png" /></li>
+</ul>
+</li>
+<li><strong>Cách 2: Vẽ ảnh chữ ký:</strong><ul>
+<li>Tại màn "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "Xác thực OTP" &gt;&gt; Chọn số điện thoại ký OTP &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Tab "Vẽ chữ ký" thực hiện di chuột để vẽ chữ ký mong muốn &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký.
+  <img alt="" src="../picture/ky-bang-phuong-thuc-otp-b3.3.png" /></li>
+<li>Hệ thống thông báo "Ký hợp đồng thành công" để hoàn thành thao tác ký.</li>
+</ul>
+</li>
+<li><strong>Cách 3: Tải ảnh mới</strong><ul>
+<li>Tại màn hình "Ký số hợp đồng" &gt;&gt; Chọn phương thức ký "Xác thực OTP" &gt;&gt; Chọn số điện thoại ký OTP &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Tab "Tải ảnh mới lên" nhấn chuột vào ô chữ nhật để tải ảnh mới cho phương thức ký đã chọn &gt;&gt; Nhấn "Tiếp theo" &gt;&gt; Click để chọn vị trí hiển thị ảnh ký trên hợp đồng &gt;&gt; Nhấn "Ký" để thực hiện ký.</li>
+<li>Hệ thống thông báo "Ký hợp đồng thành công" để hoàn thành thao tác ký.
+  <img alt="" src="../picture/ky-bang-phuong-thuc-otp-b3.4.png" /></li>
+</ul>
+</li>
+</ul>
+<h3 id="hop-ong-so-hoa"><strong>Hợp đồng số hóa</strong></h3>
+<p><strong>Mục đích:</strong> Sử dụng cho người dùng có yêu cầu quản lý các hợp đồng giấy upload lên trên phần mềm Hợp đồng điện tử để lưu trữ số hóa.</p>
+<p><strong>Các bước thực hiện:</strong></p>
+<ul>
+<li><strong>Bước 1:</strong> Thực hiện truy cập <strong>Quản lý hợp đồng</strong> &gt;&gt; <strong>Hợp đồng số hóa</strong>.
+  <img alt="" src="../picture/hop-dong-so-hoa-b1.png" /></li>
+<li><strong>Bước 2:</strong> Tạo <strong>"Thêm mới"</strong></li>
+<li>Chọn tải file lên phần mềm: Hệ thống nhận các định dạng file doc/pdf/rar và dung lượng không quá 100MB</li>
+<li>Người dùng điền đầy đủ các trường thồn tin sau: Loại hợp đồng, hợp đồng gốc (nếu có), tên hợp đồng, mã hợp đồng, ngày hiệu lực, ngày hết hiệu lực.</li>
+<li>Người dùng có thể upload nhiều file theo 1 bộ hợp đồng. Và thực hiện lập hợp đồng.</li>
+</ul>
+<p><img alt="" src="../picture/hop-dong-so-hoa-b2.png" /></p>
+<ul>
+<li><strong>Bước 3:</strong> Sau khi upload hợp đồng giấy lên phần mềm thành công, người dùng có thể thực hiện các thao tác: xem, sửa, tải, xóa. Và dễ dàng tìm kiếm hợp đồng theo các thông tin thiết lập ban đầu.
+  <img alt="" src="../picture/hop-dong-so-hoa-b3.png" /></li>
+</ul>
+<h3 id="hop-ong-can-xac-nhan"><strong>Hợp đồng cần xác nhận</strong></h3>
+<p><strong>Mục đích:</strong> Sử dụng trong TH doanh nghiệp ký bằng CTS trước, bên nhận hợp đồng ký bằng OTP sau và cần DN xác nhận ký lại một lần nữa để đảm bảo tính pháp lý cho hợp đồng.</p>
+<p><strong>Các bước thực hiện:</strong></p>
+<ul>
+<li><strong>Bước 1:</strong> Thực hiện truy cập <strong>Hợp đồng của tôi</strong> &gt;&gt; <strong>HĐ cần xác nhận</strong>.
+  <img alt="" src="../picture/hop-dong-can-xac-nhan-b1.png" /></li>
+<li><strong>Bước 2:</strong> Thực hiện <img alt="Alt text" src="../image-4.png" /> <strong>Xem chi tiết</strong>. Người dùng kiểm tra lại hợp đồng và số chữ ký OTP trên hợp đồng cần xác nhận.
+  <img alt="" src="../picture/hop-dong-can-xac-nhan-b2.png" /></li>
+<li><strong>Bước 3:</strong> Thực hiện <strong>Ký xác nhận</strong></li>
+<li>Thực hiện đăng ký phương thức ký.
+    <img alt="" src="../picture/hop-dong-can-xac-nhan-b3.1.png" /></li>
+<li>Người dùng chọn CTS để thực hiện ký.
+    <img alt="" src="../picture/hop-dong-can-xac-nhan-b3.2.png" /></li>
+<li>Sau khi doanh nghiệp ký xác nhận thành công, hệ thống sẽ trả về kết quả Hợp đồng ở trạng thái Hoàn thành và có giá trị.
+    <img alt="" src="../picture/hop-dong-can-xac-nhan-b3.3.png" />
+    <img alt="" src="../picture/hop-dong-can-xac-nhan-b3.4.png" /></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../cau-hinh-truoc-khi-su-dung/" class="btn btn-neutral float-left" title="Cấu hình trước khi sử dụng"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../release-notes/" class="btn btn-neutral float-right" title="Release Notes">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Prepared by <a href="https://hopdongdientu.viettel.vn/">vContract - Viettel.</a></p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../cau-hinh-truoc-khi-su-dung/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../release-notes/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/extra.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

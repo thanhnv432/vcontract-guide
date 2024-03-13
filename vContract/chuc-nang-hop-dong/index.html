@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Chuc nang hop dong - Hướng dẫn sử dụng hệ thống vContract</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Chuc nang hop dong";
+        var mkdocs_page_input_path = "vContract\\chuc-nang-hop-dong.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Hướng dẫn sử dụng hệ thống vContract
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Trang chủ</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">vContract - Hợp đồng điện tử</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cau-hinh-truoc-khi-su-dung/">Cấu hình trước khi sử dụng</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../thao-tac-tren-hop-dong/">Thao tác trên hợp đồng</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../release-notes/">Release Notes</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Hướng dẫn sử dụng hệ thống vContract</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Chuc nang hop dong</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h3 id="chuc-nang-hop-ong"><strong>Chức năng hợp đồng</strong></h3>
+<h4 id="hop-ong-cong-ty-lap"><strong>Hợp đồng công ty lập</strong></h4>
+<p><strong>Mục đích:</strong> Dùng cho doanh nghiệp mua dịch vụ hợp đồng điện tử của viettel, người dùng có quyền quản lý tài liệu sẽ được quyền quản lý menu này.</p>
+<h5 id="tim-kiem-hop-ong-cong-ty-lap"><strong>Tìm kiếm hợp đồng công ty lập</strong></h5>
+<ul>
+<li><strong>B1</strong> : Quản lý hợp đồng &gt;&gt; HĐ công ty lập</li>
+<li><strong>B2</strong> : Nhập các tiêu chí tìm kiếm và chọn <strong>Tìm kiếm</strong></li>
+<li><strong>Các tiêu chí tìm kiếm nâng cao gồm :</strong><ul>
+<li>Tên/Mã hợp đồng</li>
+<li>Tên/Email bên ký kết</li>
+<li>Trạng thái : Tất cả, Nháp, Đang xử lý, Đã từ chối, Hoàn thành, Đã hủy.</li>
+<li>Tên người lập/chi nhánh lập</li>
+<li>Loại hợp đồng</li>
+<li>Ngày lập (từ)</li>
+<li>Ngày lập (đến)</li>
+</ul>
+</li>
+<li><strong>Các tiêu chí tìm kiếm cơ bản gồm :</strong><ul>
+<li>Tên/Mã hợp đồng</li>
+<li>Bên ký kết/Người lập</li>
+<li>Trạng thái : Tất cả, Nháp, Đang xử lý, Đã từ chối, Hoàn thành, Đã hủy.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TimKiemHopDongCongTyLap.png" /></p>
+<h5 id="xem-chi-tiet-hop-ong"><strong>Xem chi tiết hợp đồng</strong></h5>
+<p><strong>Mục đích:</strong> Cho phép người dùng xem chi tiết thông tin hợp đồng</p>
+<ul>
+<li><strong>B1:</strong> Vào menu “Quản lý hợp đồng” &gt;&gt; HĐ công ty lập </li>
+<li><strong>B2:</strong> Nhấn vào nút <strong>Xem chi tiết</strong></li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_XemChiTietHopDong.png" /></p>
+<h5 id="tai-hop-ong"><strong>Tải hợp đồng</strong></h5>
+<p><strong>Mục đích:</strong> Cho phép người dùng tải hợp đồng về lưu.</p>
+<ul>
+<li><strong>B1:</strong> Vào menu “Quản lý hợp đồng” &gt;&gt; Chọn  <strong>HĐ công ty lập</strong> </li>
+<li><strong>B2:</strong> Nhấn vào nút <strong>Tải</strong></li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TaiHopDongCongTyLap.png" /></p>
+<h5 id="sao-chep-hop-ong-mau"><strong>Sao chép hợp đồng mẫu</strong></h5>
+<p><strong>Mục đích:</strong> Cho phép người dùng sao chép hợp đồng để thực hiện lập hợp đồng mới nhanh hơn.</p>
+<ul>
+<li><strong>B1:</strong> Vào menu “Quản lý hợp đồng” &gt;&gt; HĐ công ty lập** </li>
+<li><strong>B2:</strong> Nhấn vào nút "Sao chép”</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_SaoChepHopDongMau.png" /></p>
+<h4 id="hop-ong-nhan-tu-oi-tac"><strong>Hợp đồng nhận từ đối tác</strong></h4>
+<h5 id="tim-kiem-hop-ong-nhan-tu-oi-tac"><strong>Tìm kiếm hợp đồng nhận từ đối tác</strong></h5>
+<ul>
+<li><strong>B1 :</strong> Quản lý hợp đồng &gt;&gt; HĐ công ty lập</li>
+<li><strong>B2 :</strong> Nhập các tiêu chí tìm kiếm và chọn <strong>Tìm kiếm</strong></li>
+<li><strong>Các tiêu chí tìm kiếm nâng cao gồm :</strong><ul>
+<li>Tên/Mã hợp đồng</li>
+<li>Tên/Email bên ký kết</li>
+<li>Trạng thái : Tất cả, Đang xử lý, Đã từ chối, Hoàn thành.</li>
+<li>Tiến độ: Tất cả, Chờ thiết lập luồng ký, Đang xử lý, Từ chối, Đã húy duyệt, Dừng xử lý.</li>
+<li>Tên bên lập hợp đồng</li>
+<li>Ngày nhận (từ)</li>
+<li>Ngày nhận (đến)</li>
+</ul>
+</li>
+<li><strong>Các tiêu chí tìm kiếm cơ bản gồm</strong> :<ul>
+<li>Tên/Mã hợp đồng</li>
+<li>Tên/Email bên ký kết</li>
+<li>Trạng thái : Tất cả, Đang xử lý, Đã từ chối, Hoàn thành.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TimKiemHopDongNhanTuDoiTac.png" /></p>
+<h5 id="xem-chi-tiet-hop-ong_1"><strong>Xem chi tiết hợp đồng</strong></h5>
+<p><strong>Mục đích:</strong> Cho phép người dùng xem chi tiết thông tin hợp đồng</p>
+<ul>
+<li><strong>B1:</strong> Vào menu “Quản lý hợp đồng” &gt;&gt; Chọn <strong>HĐ nhận từ đối tác</strong> </li>
+<li><strong>B2:</strong> Nhấn vào nút <strong>Xem chi tiết</strong></li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_XemChiTietHopDongNhanTuDoiTac.png" /></p>
+<h5 id="tai-hop-ong_1"><strong>Tải hợp đồng</strong></h5>
+<p><strong>Mục đích:</strong> Cho phép người dùng tải hợp đồng về lưu.</p>
+<ul>
+<li><strong>B1:</strong> Vào menu “Quản lý hợp đồng” &gt;&gt; HĐ nhận từ đối tác </li>
+<li><strong>B2:</strong> Nhấn nút <strong>Tải</strong></li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TaiHopDongNhanTuDoiTac.png" /></p>
+<h4 id="chinh-sua-hop-ong"><strong>Chỉnh sửa hợp đồng</strong></h4>
+<p><strong>Lưu ý:</strong> chỉ áp dụng cho hợp đồng <strong>Nháp</strong></p>
+<ul>
+<li><strong>B1:</strong>  Đăng nhập vào tài khoản người dùng lập hợp đồng &gt;&gt; Hợp đồng của tôi &gt;&gt; HĐ tôi lập &gt;&gt; Chọn hợp đồng đang ở trạng thái Nháp &gt;&gt; click icon Sửa:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_ChinhSuaHopDong.png" /></p>
+<ul>
+<li><strong>B2</strong> : sửa những thông tin cần thiết và nhấn nút <strong>Lưu</strong> để lưu cập nhật</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_ChinhSuaHopDong2.png" /></p>
+<h4 id="xoa-hop-ong"><strong>Xóa hợp đồng</strong></h4>
+<p><strong>Lưu ý</strong>: chức năng này chỉ sử dụng cho người dùng tạo ra chính hơp đồng đó và hợp đồng đang ở trạng Thái Nháp.</p>
+<ul>
+<li><strong>B1</strong>: Đăng nhập vào tài khoản người dùng bất ký bên doanh nghiệp lập hợp đồng &gt;&gt; Hợp đồng của tôi &gt;&gt; HĐ tôi lập</li>
+<li><strong>B2</strong>: Tìm bản ghi hợp đồng đang ở Trạng thái “Nháp” &gt;&gt; click icon “Xóa” &gt;&gt; Nhấn đồng ý trên popup xác nhận để xóa hợp đồng.</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_XoaHopDong.png" /></p>
+<h4 id="thiet-lap-luong-ky"><strong>Thiết lập luồng ký</strong></h4>
+<ul>
+<li>
+<p><strong>Lưu ý:</strong>  chức năng này chỉ áp dụng cho khách hàng tổ chức có mua dịch vụ hợp đồng điện tử của Viettel (tức là khách hàng này vừa là doanh nghiệp mua dịch vụ hợp đồng điện tử của Viettel vừa là khách hàng của doanh nghiệp khác có mua dịch vụ hợp đồng điện tử của Viettel).</p>
+</li>
+<li>
+<p><strong>Mục đích:</strong>  Cho phép khách hàng thiết lập luồng ký nội bộ của doanh nghiệp mình xử lý hợp đồng khi nhận được hợp đồng từ đối tác chuyển đến.</p>
+</li>
+<li>
+<p><strong>Các bước thực hiện:</strong></p>
+</li>
+</ul>
+<p><strong>B1:</strong> Đăng nhập vào tài khoản của khách hàng doanh nghiệp &gt;&gt; Quản lý hợp đồng &gt;&gt; HĐ nhận từ đối tác &gt;&gt; Nhấn nút “Xem chi tiết”:</p>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_ThietLapLuongKy1.png" /></p>
+<p><strong>B2:</strong>  Tại group “Thiết lập luồng duyệt- ký nội bộ” &gt;&gt; gõ tên/ email của người dùng thuộc doanh nghiệp muốn đưa vào danh sách luồng ký duyệt &gt;&gt; nhấn “Lưu” để lưu lại luồng xử lý cho hợp đồng &gt;&gt; hệ thống sẽ tự động chuyển yêu cầu xử lý đến từng người dùng được thiết lập trong luồng theo trình tự của cột “TT”:</p>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_ThietLapLuongKy2.png" /></p>
+<h4 id="duyet-hop-ong"><strong>Duyệt hợp đồng</strong></h4>
+<ul>
+<li>
+<p><strong>Mục đích</strong>: sử dụng cho người dùng đang có yêu cầu cần duyệt hợp đồng được chuyển đến.</p>
+</li>
+<li>
+<p><strong>Các bước thực hiện:</strong></p>
+</li>
+</ul>
+<p><strong>B1</strong>: Đăng nhập vào tài khoản người dùng có yêu cầu cần duyệt hợp đồng &gt;&gt; Hợp đồng của tôi &gt;&gt; HĐ chờ phê duyệt &gt;&gt; xem chi tiết lại hợp đồng.</p>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_DuyetHopDong1.png" /></p>
+<p><strong>B2</strong>: Duyệt &gt;&gt; Nhập lý do duyệt (nếu có) &gt;&gt; Lưu</p>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_DuyetHopDong2.png" /></p>
+<p><strong>B3</strong>: Hệ thống thông báo “Phê duyệt thành công” để hoàn thành bước phê duyệt.</p>
+<h4 id="ky-nhay-hop-ong"><strong>Ký nháy hợp đồng</strong></h4>
+<p><strong>B1:</strong> Đăng nhập vào tài khoản của người dùng đang có yêu cầu chờ Ký duyệt hoặc Phê duyệt hợp đồng &gt;&gt; Hợp đồng của tôi &gt;&gt; Click vào một trong 2 menu “HĐ chờ ký duyệt” hoặc “HĐ chờ phê duyệt” &gt;&gt; Xem chi tiết hợp đồng &gt;&gt; Chuyển ký nháy &gt;&gt; Chọn người cần chuyển ký nháy &gt;&gt; Nhấn “xác nhận”:</p>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyNhayHopDong1.png" /></p>
+<p><strong>B2:</strong> Đăng nhập vào tài khoản của người dùng có yêu cầu ký nháy hợp đồng &gt;&gt; Hợp đồng của tôi &gt;&gt; HĐ chờ ký nháy &gt;&gt; Click “Xem chi tiết:</p>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyNhayHopDong2.png" /></p>
+<p><strong>B3:</strong> Ký nháy &gt;&gt; Nhập nội dung ký nháy (nếu có) &gt;&gt; Nhấn “Lưu”</p>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyNhayHopDong3.png" /></p>
+<h4 id="tu-choi-duyet-hop-ong"><strong>Từ chối duyệt hợp đồng</strong></h4>
+<ul>
+<li><strong>B1:</strong> Đăng nhập vào tài khoản người dùng đang có yêu cầu cần Duyệt hợp đồng &gt;&gt; Hợp đồng của tôi &gt;&gt; HĐ chờ phê duyệt &gt;&gt; Xem chi tiết:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiDuyetHopDong1.png" /></p>
+<ul>
+<li><strong>B2</strong>: Click “Từ chối” &gt;&gt; Nhập lý do từ chối &gt;&gt; Nhấn “Lưu” để hoàn tất thao tác:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiDuyetHopDong2.png" /></p>
+<ul>
+<li>Sau khi từ chối phê duyệt thành công, hợp đồng sẽ chuyển về trạng thái “Đã từ chối” và kết thúc luồng ký:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiDuyetHopDong3.png" /></p>
+<h4 id="tu-choi-ky-hop-ong"><strong>Từ chối ký hợp đồng</strong></h4>
+<ul>
+<li><strong>B1 :</strong> Đăng nhập vào tài khoản người dùng đang có yêu cầu cần Ký hợp đồng &gt;&gt; Hợp đồng của tôi &gt;&gt; HĐ chờ ký duyệt &gt;&gt; Xem chi tiết:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiKyHopDong1.png" /></p>
+<ul>
+<li><strong>B2</strong> : Click “Từ chối” &gt;&gt; Nhập lý do từ chối &gt;&gt; Nhấn “Lưu” để hoàn tất thao tác:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiKyHopDong2.png" /></p>
+<ul>
+<li>Sau khi từ chối phê duyệt thành công, hợp đồng sẽ chuyển về trạng thái “Đã từ chối” và kết thúc luồng ký:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiKyHopDong3.png" /></p>
+<h4 id="huy-luong-ky"><strong>Hủy luồng ký</strong></h4>
+<ul>
+<li><strong>Lưu ý:</strong>  Hợp đồng do người dùng nào tạo ra thì người dùng đó sẽ được thực hiện chức năng này, người dùng không tạo ra hợp đồng sẽ không được dùng chức năng này.</li>
+</ul>
+<p><strong>Các bước thực hiện:</strong></p>
+<ul>
+<li><strong>B1</strong>: Đăng nhập vào tài khoản người dùng bất kỳ của doanh nghiệp &gt;&gt; Hợp đồng của tôi &gt;&gt; HĐ tôi lập &gt;&gt; Chọn Hợp đồng đang ở trạng thái “Đang xử lý” &gt;&gt; Click icon “Hủy luồng ký” &gt;&gt; Nhấn “Đồng ý” trên form xác nhận để hoàn tất việc Hủy luồng ký.</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_HuyLuongKy.png" /></p>
+<ul>
+<li><strong>B2</strong>: Nhập lý do Hủy &gt;&gt; Lưu:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_HuyLuongky2.png" /></p>
+<ul>
+<li><strong>B3</strong>: Sau khi hủy thành công, hợp đồng sẽ ở trạng thái “Đã hủy”, và dừng quá trình xử lý hợp đồng không cho người dùng thao tác ký/từ chối hợp đồng nữa:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_HuyLuongKy3.png" /></p>
+<h4 id="tai-hop-ong_2"><strong>Tải hợp đồng</strong></h4>
+<ul>
+<li><strong>B1</strong> : Vào 1 trong các menu “HĐ Công ty lập, HĐ nhận từ đối tác, HĐ tôi lập, HĐ chờ phê duyệt, HĐ chờ ký duyệt, HĐ chờ ký nháy” -&gt; click icon “ tải”</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TaiHopDong1.png" /></p>
+<ul>
+<li><strong>B2 :</strong> Hợp đồng được mở ở tab mới dưới dạng pdf file, chọn biểu tượng <strong>Tải</strong> để tải tài liệu về máy</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TaiHopDong2.png" /></p>
+<h4 id="ky-theo-lo"><strong>Ký theo lô</strong></h4>
+<ul>
+<li><strong>B1 :</strong> Hợp đồng của tôi &gt;&gt; HĐ chờ ký duyệt &gt;&gt; Chọn những tài liệu muốn ký -&gt; “Ký theo lô”</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyTheoLo1.png" /></p>
+<ul>
+<li><strong>B2 :</strong> Sau khi popup xác nhận xuất hiện, nhấn nút <strong>Xác nhận</strong></li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyTheoLo2.png" /></p>
+<ul>
+<li><strong>B3</strong> : Chọn chứng thư số và nhấn <strong>Ký</strong> </li>
+</ul>
+<p><strong>Lưu ý :</strong>  Chỉ có thể sử dụng <strong>Chứng thư số HSM</strong> đối với chức năng ký theo lô</p>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyTheoLo3.png" /></p>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyTheoLo4.png" /></p>
+<p>Sau khi quá trình ký kết thúc, sẽ có thông báo về số lượng hợp đồng đã ký thành công và thất bại</p>
+<h4 id="ky-tat-ca-tai-lieu-tim-uoc-theo-ieu-kien"><strong>Ký tất cả tài liệu tìm được theo điều kiện</strong></h4>
+<ul>
+<li><strong>B1 :</strong> Hợp đồng của tôi &gt;&gt; HĐ chờ ký duyệt &gt;&gt;“Ký tất cả”</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyTatCaTaiLieuTimDuocTheoDieuKien1.png" /></p>
+<ul>
+<li><strong>B2 :</strong> Sau khi popup xác nhận xuất hiện, chọn <strong>Xác nhận</strong></li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyTatCaTaiLieuTimDuocTheoDieuKien2" />
+- <strong>B3 :</strong> Chọn chứng thư số và nhấn <strong>Ký</strong></p>
+<p><strong>Lưu ý :</strong>  Chỉ có thể sử dụng <strong>Chứng thư số HSM</strong> đối với chức năng ký tất cả</p>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyTatCaTaiLieuTimDuocTheoDieuKienTimKiem3.png" /></p>
+<p>Sau khi quá trình ký kết thúc, sẽ có thông báo về số lượng hợp đồng đã ký thành công và thất bại</p>
+<h4 id="ky-khong-ang-nhap"><strong>Ký không đăng nhập</strong></h4>
+<p><strong>Mục đích</strong> : cho phép khách hàng truy cập vào hợp đồng để thực hiện ký mà không cần đăng nhập qua tài khoản hệ thống.</p>
+<p><strong>Lưu ý</strong>: chức năng ký không đăng nhập chỉ áp dụng cho khách hàng cuối của doanh nghiệp sử dụng phương thức ký số</p>
+<p><strong>Các bước thực hiện:</strong></p>
+<ul>
+<li><strong>B1:</strong> Bên doanh nghiệp lập hợp đồng thực hiện lập hợp đồng ký kết với khách hàng của doanh nghiệp mình bằng cách: </li>
+<li>Đăng nhập vào hệ thống hợp đồng điện tử &gt;&gt; Hợp đồng của tôi &gt;&gt; Lập hợp đồng.</li>
+<li>Chọn cách lập hợp đồng  theo “Chọn tệp từ máy tính” hoặc “Chọn từ mẫu”</li>
+<li>Nhập các thông tin hợp lệ trên màn hình lập hợp đồng</li>
+<li>Tại group “Các bên ký kết” &gt;&gt; chọn khách hàng vào danh sách ký kết hợp đồng &gt;&gt; tại dòng dữ liệu khách hàng, tích chọn vào chekbox cột “KKĐN” để thiết lập cho phép khách hàng ký hợp đồng mà không cần đăng nhập.</li>
+<li>Nhấn “lập hợp đồng” để lưu lại hợp đồng ở trạng thái Nháp</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyKhongDangNhap1.png" /></p>
+<ul>
+<li>Tại màn hình “Danh sách hợp đồng của tôi” &gt;&gt; Chọn bản ghi hơp đồng vừa lập, nhấn vào icon “Thực hiện luồng ký” để bắt đầu luồng ký kết, chuyển hợp đồng đến khách hàng xử lý:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyKhongDangNhap2.png" /></p>
+<ul>
+<li><strong>B2</strong>: Sau khi bắt đầu luồng ký, hợp đồng được chuyển đến khách hàng xử lý, khách hàng sẽ nhận được email thông báo ký hợp đồng trên link ký không đăng nhập:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyKhongDangNhap3.png" /></p>
+<p>Trong email này có các thông tin sau:</p>
+<ul>
+<li>Đơn vị yêu cầu: Đơn vị gửi yêu cầu xử lý hợp đồng đến khách hàng</li>
+<li>Tên tài liệu: Mã- Tên hợp đồng cần ký kết</li>
+<li>Email truy cập: email truy cập hợp đồng thông qua link ký không đăng nhập</li>
+<li>Mật khẩu truy cập: mật khẩu truy cập hợp đồng thông qua link ký không đăng nhập</li>
+<li>Link liên kết: Link truy cập hợp đồng</li>
+<li><strong>B3</strong>: Khách hàng click vào link liên kết gửi trong email, sẽ xuất hiện màn hình đăng nhập như sau:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyKhongDangNhap4.png" /></p>
+<ul>
+<li><strong>B4</strong>: Nhập email/ mật khẩu gửi trong email &gt;&gt; nhấn Đăng nhập để truy cập hợp đồng:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyKhongDangNhap5.png" /></p>
+<ul>
+<li><strong>B5:</strong> Nhấn “Ký” để thực hiện ký hợp đồng</li>
+<li><strong>Ký bằng USB TOKEN:</strong>
+  Bước 1: Trên màn hình chi tiết hợp đồng &gt;&gt; Nhấn “Ký” &gt;&gt; chọn phương thức ký “USB TOKEN” &gt;&gt; nhấn “Tải lên từ usb token” &gt;&gt; Chọn chứng thư số muốn ký trong danh sách chứng thư số được load lên popup &gt;&gt; Nhấn “Select” để lựa chọn:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyKhongDangNhap6.png" /></p>
+<p>Bước 2: Nhấn “Tiếp theo” &gt;&gt; thực hiện chọn ảnh chữ ký ở các tab lựa chọn: </p>
+<p>Tab “ Ảnh đã đăng ký”: hiển thị ảnh ký mặc định do hệ thống sinh ra</p>
+<p>Tab “ Tải ảnh mới lên”: người dùng được phép tải ảnh chữ ký mới, ảnh chữ ký này phải có dung lượng không được vượt quá 2MB.</p>
+<p>Tab “ Vẽ chữ ký”: người dùng thực hiện dùng chuột để vẽ trực tiếp chữ ký của mình, sử dụng làm ảnh ký cho hợp đồng.</p>
+<p>Bước 3: Nhấn “Tiếp theo” &gt;&gt;  Click chọn vị trí hiển thị ảnh ký đã chọn ở bước trên &gt;&gt; Sau đó nhấn “Ký”  để thực hiện ký hợp đồng &gt;&gt; Nhập Mã PIN usb token để thực hiện ký thành công.</p>
+<ul>
+<li><strong>Ký bằng SIMCA:</strong>
+ Trên màn hình chi tiết hợp đồng &gt;&gt; nhấn “Ký” &gt;&gt; chọn phương thức ký “SIMCA” &gt;&gt; Nhập số điện thoại chứa CA cần ký &gt;&gt; click “lấy danh sách CTS” &gt;&gt; tích chọn chứng thư số muốn ký trong danh sách chứng thư số được load lên popup &gt;&gt; nhấn “Tiếp theo”:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_KyKhongDangNhap7.png" /></p>
+<ul>
+<li>Thực hiện chọn ảnh chữ ký ở các tab lựa chọn:     </li>
+<li>Tab “ Ảnh đã đăng ký”: hiển thị ảnh ký mặc định do hệ thống sinh ra</li>
+<li>Tab “ Tải ảnh mới lên”: người dùng được phép tải ảnh chữ ký mới, ảnh chữ ký này phải có dung lượng không được vượt quá 2MB.</li>
+<li>Tab “ vẽ chữ ký”: người dùng thực hiện dùng chuột để vẽ trực tiếp chữ ký của mình, sử dụng làm ảnh ký cho hợp đồng.</li>
+<li>Nhấn “Tiếp theo” &gt;&gt;  Click chọn vị trí hiển thị ảnh ký đã chọn ở bước trên &gt;&gt; Sau đó nhấn “Ký”  để gửi yêu cầu ký xuống SIM CA &gt;&gt; Trên SIM nhận được yêu cầu ký &gt;&gt; Thực hiện ký hợp đồng thành công.</li>
+</ul>
+<h4 id="tu-choi-ky-khong-ang-nhap"><strong>Từ chối ký không đăng nhập</strong></h4>
+<p><strong>Mục đích</strong> : cho phép khách hàng truy cập vào hợp đồng để thực hiện từ chối hợp đồng mà không cần đăng nhập qua tài khoản hệ thống.</p>
+<p><strong>Lưu ý</strong>: chức năng từ chối không đăng nhập chỉ áp dụng cho khách hàng cuối của doanh nghiệp sử dụng phương thức ký số</p>
+<p><strong>Các bước thực hiện:</strong></p>
+<ul>
+<li><strong>B1:</strong> Bên doanh nghiệp lập hợp đồng thực hiện lập hợp đồng ký kết với khách hàng của doanh nghiệp mình bằng cách: </li>
+<li>Đăng nhập vào hệ thống hợp đồng điện tử &gt;&gt; Hợp đồng của tôi &gt;&gt; Lập hợp đồng.</li>
+<li>Chọn cách lập hợp đồng  theo “Chọn tệp từ máy tính” hoặc “Chọn từ mẫu”</li>
+<li>Nhập các thông tin hợp lệ trên màn hình lập hợp đồng</li>
+<li>Tại group “Các bên ký kết” &gt;&gt; chọn khách hàng vào danh sách ký kết hợp đồng &gt;&gt; tại dòng dữ liệu khách hàng, tích chọn vào chekbox cột “KKĐN” để thiết lập cho phép khách hàng ký hợp đồng mà không cần đăng nhập.</li>
+<li>Nhấn “lập hợp đồng” để lưu lại hợp đồng ở trạng thái Nháp</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiKyKhongDangNhap1.png" /></p>
+<ul>
+<li>Tại màn hình “Danh sách hợp đồng của tôi” &gt;&gt; chọn bản ghi hơp đồng vừa lập, nhấn vào icon “Thực hiện luồng ký” để bắt đầu luồng ký kết, chuyển hợp đồng đến khách hàng xử lý:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiKyKhongDangNhap2.png" /></p>
+<ul>
+<li><strong>B2</strong>: Sau khi bắt đầu luồng ký, hợp đồng được chuyển đến khách hàng xử lý, khách hàng sẽ nhận được email thông báo ký hợp đồng trên link ký không đăng nhập:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiKyKhongDangNhap3.png" /></p>
+<p>Trong email này có các thông tin sau:</p>
+<ul>
+<li>Đơn vị yêu cầu: Đơn vị gửi yêu cầu xử lý hợp đồng đến khách hàng</li>
+<li>Tên tài liệu: Mã- Tên hợp đồng cần ký kết</li>
+<li>Email truy cập: email truy cập hợp đồng thông qua link ký không đăng nhập</li>
+<li>Mật khẩu truy cập: mật khẩu truy cập hợp đồng thông qua link ký không đăng nhập</li>
+<li>Link liên kết: Link truy cập hợp đồng</li>
+<li><strong>B3</strong>: Khách hàng click vào link liên kết gửi trong email, sẽ xuất hiện màn hình đăng nhập như sau:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiKyKhongDangNhap4.png" /></p>
+<ul>
+<li><strong>B4</strong>: Nhập Email/Mật khẩu gửi trong email &gt;&gt; Nhấn Đăng nhập để truy cập hợp đồng:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_TuChoiKyKhongDangNhap5.png" /></p>
+<ul>
+<li><strong>B5:</strong> Nhấn “Từ chối” &gt;&gt; Nhập lý do từ chối &gt;&gt; Nhấn “Lưu” để thực hiện từ chối ký hợp đồng qua link ký không đăng nhập.</li>
+</ul>
+<h3 id="quan-ly-thong-bao"><strong>Quản lý thông báo</strong></h3>
+<p><strong>Mục đích :</strong> Được sử dụng cho hầu hết người dùng trong hệ thống vContract, với chức năng chính là thông báo về những sự kiện quan trọng diễn ra trong hệ thống liên quan trực tiếp đến người dùng mà họ có thể không muốn bỏ lỡ</p>
+<ul>
+<li>Các dạng thông báo gồm có:</li>
+<li>Gửi thông báo khi người lập bắt đầu luồng ký Ký tài liệu bên A và bên B</li>
+<li>Gửi thông báo khi hệ thống chuyển xử lý đến chủ thể ký kết tiếp theo</li>
+<li>Gửi thông báo khi khách hàng có mua dịch vụ thiết lập luồng ký của đơn vị</li>
+<li>Gửi thông báo khi hợp đồng được phê duyệt</li>
+<li>Gửi thông báo khi hợp đồng được ký duyệt</li>
+<li>Gửi thông báo khi hợp đồng được ký duyệt</li>
+<li>Gửi thông báo khi hợp đồng bị từ chối (phê / ký duyệt)</li>
+<li>Gửi thông báo khi người dùng chuyển ký nháy</li>
+<li>Gửi thông báo khi người dùng thực hiện ký nháy</li>
+<li>Gửi thông báo khi người dùng từ chối ký nháy</li>
+<li>Gửi thông báo khi người lập hủy luồng ký kết</li>
+</ul>
+<h4 id="menu-thong-bao"><strong>Menu thông báo</strong></h4>
+<ul>
+<li><strong>B1 :</strong> Từ trang chủ chọn vào “Icon thông báo” ở góc trên bên phải màn hình</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_MenuThongBao.png" /></p>
+<p><strong>Ghi chú :</strong> Phần danh sách chỉ hiện thị tối đa 5 thông báo mới nhất của người dùng đang đăng nhập (nếu có)</p>
+<h4 id="danh-sach-thong-bao"><strong>Danh sách thông báo</strong></h4>
+<ul>
+<li><strong>B1</strong> : Từ trang chủ, chọn vào “Icon thông báo” -&gt; “Xem tất cả”</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_DanhSachThongBao1.png" /></p>
+<ul>
+<li><strong>B2</strong> : Hệ thống chuyển hướng đến trang danh sách thông báo</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_DanhSachThongBao2.png" /></p>
+<h4 id="hien-thi-chi-tiet-thong-bao"><strong>Hiển thị chi tiết thông báo</strong></h4>
+<ul>
+<li><strong>B1</strong> : Từ màn hình “Danh sách thông báo” -&gt; Chọn một thông báo bất kỳ</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_HienThiChiTietThongBao1.png" /></p>
+<ul>
+<li><strong>B2</strong> : Sẽ hiện thị nội dung Thông báo được click:</li>
+</ul>
+<p><img alt="" src="../picture/PIC_SME_Vcontract_HienThiChiTietThongBao2.png" /></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Prepared by <a href="https://hopdongdientu.viettel.vn/">vContract - Viettel.</a></p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/extra.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

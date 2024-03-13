@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Lập hợp đồng - Hướng dẫn sử dụng hệ thống vContract</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "L\u1eadp h\u1ee3p \u0111\u1ed3ng";
+        var mkdocs_page_input_path = "vContract\\hdsd_lap_hop_dong.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Hướng dẫn sử dụng hệ thống vContract
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Trang chủ</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">vContract - Hợp đồng điện tử</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cau-hinh-truoc-khi-su-dung/">Cấu hình trước khi sử dụng</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../thao-tac-tren-hop-dong/">Thao tác trên hợp đồng</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../release-notes/">Release Notes</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Hướng dẫn sử dụng hệ thống vContract</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Lập hợp đồng</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="lap-hop-ong"><strong>Lập hợp đồng</strong></h1>
+<h2 id="1-tao-hop-ong-tu-chon-tep-tu-may">1. <strong>Tạo hợp đồng từ “Chọn tệp từ máy”</strong></h2>
+<p><strong>Mục đích:</strong> cho phép người dùng tạo hợp đồng từ file hợp đồng tự tạo sẵn đã lưu trên máy tính.</p>
+<p><strong>B1 :</strong> Đăng nhập vào tài khoản người dùng doanh nghiệp có mua dịch vụ bất kỳ &gt;&gt; <strong>Hợp đồng của tôi</strong> &gt;&gt; <strong>Lập hợp đồng</strong> &gt;&gt; Click “Chọn tệp từ máy”:</p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.001.png" /></p>
+<p><strong>B2 :</strong> Chọn file hợp đồng đã chuẩn bị và lưu trên máy tính &gt;&gt; Nhập các thông tin hợp lệ &gt;&gt; <strong>Tiếp theo</strong></p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.002.png" /></p>
+<p>Các thông tin cần nhập như sau:</p>
+<ul>
+<li><strong>Loại hợp đồng</strong>: chọn loại hợp đồng mà người dùng muốn lập, trường hợp chưa có loại hợp đồng trong combobox người dùng liên hệ admin hoặc người dùng được phân quyền “Quản lý thông tin doanh nghiệp” của đơn vị để thực hiện thêm mới loại hợp đồng theo các bước sau trước khi lập hợp đồng:</li>
+<li>Trang chủ &gt;&gt; vào menu “Quản lý TT doanh nghiệp” &gt;&gt; Loại hợp đồng &gt;&gt; Thêm mới &gt;&gt; nhập thông tin “Tên loại hợp đồng” , “mã loại hợp đồng” &gt;&gt; bấm “Thêm loại hợp đồng”.</li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.003.png" /></p>
+<ul>
+<li><strong>Mã hợp đồng/Phụ lục:</strong> Nhập mã hợp đồng/Phụ lục, mã này phải là duy nhất</li>
+<li><strong>Tên hợp đồng/Phụ lục:</strong>  Nhập tên hợp đồng/Phụ lục</li>
+<li><strong>Ngày hết hiệu lực:</strong> Nhập ngày hết hiệu lực của hợp đồng (nếu có)</li>
+<li><strong>Hợp đồng cha đã ký (nếu có):</strong> nếu muốn lập phụ lục thì gõ tên hoặc mã hợp đồng để tìm hợp đồng cha. Trường này để xác định hợp đồng cha cho Phụ lục. </li>
+<li><strong>Group Danh sách tệp đính kèm:</strong> đính kèm tệp tin nếu có, chỉ chấp nhận tệp đính kèm định dạng: .PDF, .JPG, .PNG, .BMP, tổng dung lượng file đính kèm không vượt quá 10MB.</li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.004.png" /></p>
+<ul>
+<li><strong>Group Các bên ký kết hợp đồng:</strong> Có 2 cách thiết lập luồng ký kết các bên:</li>
+</ul>
+<p><strong>Cách 1: Chọn trực tiếp các bên ký kết vào luồng ký kết theo các bước sau:</strong></p>
+<ul>
+<li>Tại group “Các bên ký kết hợp đồng”: Nhập tên/ số giấy tờ/ Mã số thuế/ Email/ điện thoại của bên ký kết cần đưa vào danh sách ký kết hợp đồng &gt;&gt; hệ thống sẽ tự list ra doanh nghiệp/khách hàng tương ứng để chọn:</li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.005.png" />
+- Cột TT ký : để xác định thứ tự xử lý hợp đồng giữa các bên, người dùng có thể thay đổi lại được thứ tự.
+- Cột  “Bên ký kết”: hiển thị tên doanh nghiệp/khách hàng của bên ký kết.
+- Cột  “Email”: hiển thị email của doanh nghiệp/ khách hàng tương ứng, có thể sửa lại Email với trường hợp bên ký kết là khách hàng cuối (không áp dụng sửa Email cho trường hợp bên ký kết là doanh nghiệp bên lập hợp đồng).
+- Cột “Điện thoại”: hiển thị số điện thoại của doanh nghiệp/khách hàng tương ứng, có thể sửa lại “Điện thoại” với trường hợp bên ký kết là khách hàng cuối (không áp dụng sửa “Điện thoại” cho trường hợp bên ký kết là doanh nghiệp bên lập hợp đồng).
+- Button xóa: để xóa chủ thể ký kết hợp đồng (nếu muốn).</p>
+<p><strong>Cách 2:</strong> Chọn từ nguồn đã được tạo sẵn (nếu doanh nghiệp lập hợp đồng/ hoặc cá nhân người dùng đã tạo sẵn quy trình ký của đơn vị/ cá nhân từ chức năng “Quy trình ký đơn vị” và “Quy trình ký” trên hệ thống), các bước như trong hình:</p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.006.png" /></p>
+<ul>
+<li><strong>Group Thiết lập luồng duyệt – ký hợp đồng nội bộ:</strong> cho phép thiết lập luồng ký – duyệt nội bộ của doanh nghiệp của tài khoản đang lập hợp đồng (nếu trong group “các bên ký kết hợp đồng” có chủ thể ký là doanh nghiệp của tài khoản đang đăng nhập). Có 2 cách để thiết lập luồng ký duyệt nội bộ:</li>
+</ul>
+<p><strong>Cách 1: Chọn trực tiếp người dùng/ phòng ban nội bộ vào luồng ký duyệt theo các bước sau:</strong></p>
+<ul>
+<li>Gõ tên /email của người dùng/ phòng ban muốn đưa vào danh sách luồng ký duyệt nội bộ &gt;&gt; hệ thống sẽ tự list ra danh sách cần chọn:</li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.007.png" />
+- Cột “TT”: hiển thị thứ tự xử lý hợp đồng nội bộ
+- Cột “Thành viên”: hiển thị tên người dùng tham gia ký – duyệt hợp đồng
+- Cột “Vai trò”: xác định vai trò “ký” hoặc “duyệt”của người dùng. Mặc định người cuối cùng trong danh sách sẽ giữ vai trò “Ký”, người dùng còn lại giữ vai trò “Duyệt” và ko sửa đổi được.
+- Button xóa: để xóa  danh sách người dùng tham gia ký – duyệt nội bộ (nếu muốn)</p>
+<p><strong>Cách 2:</strong> Chọn từ nguồn đã được tạo sẵn (nếu doanh nghiệp lập hợp đồng/ hoặc cá nhân người dùng đã tạo sẵn quy trình ký của đơn vị/ cá nhân từ chức năng “Quy trình ký đơn vị” và “Quy trình ký” trên hệ thống), các bước như trong hình:</p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.008.png" /></p>
+<p><strong>B3</strong>: Cấu hình chân ký cố định cho các file hợp đồng (nếu cần). Các bước thực hiện như sau:</p>
+<ul>
+<li>Click vào icon “cấu hình chân ký” để mở màn hình cấu hình chân ký cố định:</li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.009.png" /></p>
+<ul>
+<li>​ Trên màn hình cấu hình, chọn Trang hợp đồng cần cấu hình chân ký &gt;&gt; Click icon “Thêm chân ký”:</li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.010.png" /></p>
+<ul>
+<li>Di chuyển chân ký muốn hiển thị về vị trí mong muốn bằng cách dùng chuột để kéo thả:</li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.011.png" /></p>
+<p><strong>B4</strong>: Nhấn “lập hợp đồng” để hoàn tất việc lập hợp đồng. Hợp đồng sau khi lưu sẽ ở trạng thái “Nháp” trong màn hình danh sách:</p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.012.png" /></p>
+<h2 id="2-tao-hop-ong-tu-chon-tu-mau">2. <strong>Tạo hợp đồng từ “Chọn từ mẫu”</strong></h2>
+<p><strong>Mục đích:</strong> cho phép người dùng tạo hợp đồng từ mẫu hợp đồng đã cấu hình sẵn trên hệ thống.</p>
+<p><strong>B1 :</strong> Đăng nhập vào tài khoản người dùng doanh nghiệp có mua dịch vụ bất kỳ &gt;&gt; <strong>Hợp đồng của tôi</strong> &gt;&gt; <strong>Lập hợp đồng</strong> &gt;&gt; Click “Chọn từ mẫu”:</p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.013.png" /></p>
+<p><strong>B2 :</strong> Tìm kiếm và chọn mẫu hợp đồng trong popup, sau đó bấm <strong>Lưu</strong></p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.014.png" /></p>
+<p>Trường hợp chưa có mẫu hợp đồng trong popup, người dùng liên hệ admin hoặc người dùng được phân quyền “Quản lý thông tin doanh nghiệp” của đơn vị để thực hiện thêm mới mẫu hợp đồng theo các bước được mô trả trong mục “Thêm mới mẫu hợp đồng”.</p>
+<p><strong>B3:</strong> Nhập các thông tin hợp lệ &gt;&gt; <strong>Tiếp theo</strong></p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.015.png" /></p>
+<p>Các thông tin cần nhập như sau:</p>
+<ul>
+<li><strong>Tên hợp đồng/Phụ lục:</strong>  Nhập tên hợp đồng/Phụ lục</li>
+<li><strong>Mã hợp đồng/Phụ lục:</strong> Nhập mã hợp đồng/Phụ lục, mã này phải là duy nhất</li>
+<li><strong>Ngày hết hiệu lực:</strong> Nhập ngày hết hiệu lực của hợp đồng (nếu có)</li>
+<li><strong>Group Danh sách tệp đính kèm:</strong> đính kèm tệp tin nếu có, chỉ chấp nhận tệp đính kèm định dạng: .PDF, .JPG, .PNG, .BMP, tổng dung lượng file đính kèm không vượt quá 10MB.</li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.016.png" /></p>
+<ul>
+<li><strong>Group Các bên ký kết hợp đồng:</strong> Có 2 cách thiết lập luồng ký kết các bên:</li>
+</ul>
+<p><strong>Cách 1: Chọn trực tiếp các bên ký kết vào luồng ký kết theo các bước sau:</strong></p>
+<ul>
+<li>Tại group “Các bên ký kết hợp đồng”: Nhập tên/ số giấy tờ/ Mã số thuế/ Email/ điện thoại của bên ký kết cần đưa vào danh sách ký kết hợp đồng &gt;&gt; hệ thống sẽ tự list ra doanh nghiệp/khách hàng tương ứng để chọn:</li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.005.png" />
+- Cột TT ký : để xác định thứ tự xử lý hợp đồng giữa các bên, người dùng có thể thay đổi lại được thứ tự.
+- Cột  “Bên ký kết”: hiển thị tên doanh nghiệp/khách hàng của bên ký kết.
+- Cột  “Email”: hiển thị email của doanh nghiệp/ khách hàng tương ứng, có thể sửa lại Email với trường hợp bên ký kết là khách hàng cuối (không áp dụng sửa Email cho trường hợp bên ký kết là doanh nghiệp bên lập hợp đồng).
+- Cột “Điện thoại”: hiển thị số điện thoại của doanh nghiệp/khách hàng tương ứng, có thể sửa lại “Điện thoại” với trường hợp bên ký kết là khách hàng cuối (không áp dụng sửa “Điện thoại” cho trường hợp bên ký kết là doanh nghiệp bên lập hợp đồng).
+- Button xóa: để xóa chủ thể ký kết hợp đồng (nếu muốn).</p>
+<p><strong>Cách 2:</strong> Chọn từ nguồn đã được tạo sẵn (nếu doanh nghiệp lập hợp đồng/ hoặc cá nhân người dùng đã tạo sẵn quy trình ký của đơn vị/ cá nhân từ chức năng “Quy trình ký đơn vị” và “Quy trình ký” trên hệ thống), các bước như trong hình:</p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.006.png" /></p>
+<ul>
+<li><strong>Group Thiết lập luồng duyệt – ký hợp đồng nội bộ:</strong> cho phép thiết lập luồng ký – duyệt nội bộ của doanh nghiệp của tài khoản đang lập hợp đồng (nếu trong group “các bên ký kết hợp đồng” có chủ thể ký là doanh nghiệp của tài khoản đang đăng nhập). Có 2 cách để thiết lập luồng ký duyệt nội bộ:</li>
+</ul>
+<p><strong>Cách 1: Chọn trực tiếp người dùng/ phòng ban nội bộ vào luồng ký duyệt theo các bước sau:</strong></p>
+<ul>
+<li>Gõ tên /email của người dùng/ phòng ban muốn đưa vào danh sách luồng ký duyệt nội bộ &gt;&gt; hệ thống sẽ tự list ra danh sách cần chọn:</li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.007.png" />
+- Cột “TT”: hiển thị thứ tự xử lý hợp đồng nội bộ
+- Cột “Thành viên”: hiển thị tên người dùng tham gia ký – duyệt hợp đồng
+- Cột “Vai trò”: xác định vai trò “ký” hoặc “duyệt”của người dùng. Mặc định người cuối cùng trong danh sách sẽ giữ vai trò “Ký”, người dùng còn lại giữ vai trò “Duyệt” và ko sửa đổi được.
+- Button xóa: để xóa  danh sách người dùng tham gia ký – duyệt nội bộ (nếu muốn)</p>
+<p><strong>Cách 2:</strong> Chọn từ nguồn đã được tạo sẵn (nếu doanh nghiệp lập hợp đồng/ hoặc cá nhân người dùng đã tạo sẵn quy trình ký của đơn vị/ cá nhân từ chức năng “Quy trình ký đơn vị” và “Quy trình ký” trên hệ thống), các bước như trong hình:</p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.008.png" /></p>
+<p><strong>B4:</strong> <strong>Điền nội dung hợp đồng</strong>: nhập nội dung các trường vào cột “giá trị”, “ghi chú” (nếu có). Sau đó bấm <strong>Tiếp theo.</strong></p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.017.png" /></p>
+<p><strong>B5:</strong> <strong>Xem trước hợp đồng:</strong> tại bước này, có thể xem trước hợp đồng, cấu hình chân ký.</p>
+<ul>
+<li>Xem trước hợp đồng </li>
+</ul>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.018.png" /></p>
+<ul>
+<li>Cấu hình chân ký: các bước thực hiện như sau:</li>
+</ul>
+<p>​ - Chọn biểu tượng Cấu hình chân ký</p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.019.png" /></p>
+<p>​   - Chọn khách hàng vào chân ký tương ứng (nếu có)</p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.020.png" /></p>
+<p><strong>B6:</strong> Nhấn “Lập hợp đồng” để hoàn tất việc lập hợp đồng. Hợp đồng sau khi lưu sẽ ở trạng thái “Nháp” trong màn hình danh sách</p>
+<p><img alt="" src="../picture/PIC-lap-hop-dong.021.png" /></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Prepared by <a href="https://hopdongdientu.viettel.vn/">vContract - Viettel.</a></p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/extra.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
