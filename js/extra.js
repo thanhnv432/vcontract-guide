@@ -9,7 +9,7 @@ $(function() {
   }
 })
 
-let a = document.querySelector('div.wy-nav-top');
+let a = document.querySelector('nav.wy-nav-top');
 let button = document.createElement('button');
 button.textContent = 'Click me';
 a.appendChild(button);
