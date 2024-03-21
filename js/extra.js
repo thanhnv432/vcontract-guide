@@ -7,9 +7,11 @@ $(function() {
   } else {
       divSideScroll.scrollTo({ left: 0, top: 0 });
   }
+
+  let a = document.querySelector('nav.wy-nav-top');
+  let button = document.createElement('button');
+  button.textContent = 'Click me';
+  a.appendChild(button);
 })
 
-let a = document.querySelector('nav.wy-nav-top');
-let button = document.createElement('button');
-button.textContent = 'Click me';
-a.appendChild(button);
+
